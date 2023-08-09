@@ -68,6 +68,7 @@
 
     .weather-card_wint_h4 {
         color: #668CAF;
+        margin-top: 15px;
         font-family: DM Sans;
         font-size: 12px;
         font-style: normal;
@@ -84,6 +85,7 @@
 
     .weather-card_cloud_h4 {
         color: #668CAF;
+        margin-top: 15px;
         font-family: DM Sans;
         font-size: 12px;
         font-style: normal;
@@ -100,10 +102,51 @@
 
     .weather-card_Isun_h4 {
         color: #668CAF;
+        margin-top: 15px;
         font-family: DM Sans;
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
     }
+}
+
+
+// Dark Theme 
+
+
+.card-dark {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 375px;
+    height: 303px;
+    border-radius: 20px;
+    background: #1F2E54;
+    box-shadow: 0px 34px 101px 0px rgba(9, 0, 63, 0.38);
+    padding: 54px;
+}
+
+.c_h2-dark {
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #8497C9;
+    font-family: Plus Jakarta Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.c_h4-dark {
+    color: #6E85C1;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
 }

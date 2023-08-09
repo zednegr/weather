@@ -85,14 +85,14 @@ function Weather() {
                 <div className="weather-wrapper">
                     {
                         data.map((item) => (
-                            <div className="weather-card" key={item.id}>
+                            <div className="weather-card card-dark" key={item.id}>
                                 <div className="weather-card_header">
                                     <div className="weather-sun">
                                         <img className="weather-sun-img" src={WeatherSun} alt="Sun" />
                                     </div>
                                     <div className="weather-c">
-                                        <h2 className="weather-c_h2">{item.main.temp}°</h2>
-                                        <h4 className="weather-c_h4">{item.weather[0].description}</h4>
+                                        <h2 className="weather-c_h2 c_h2-dark">{item.main.temp}°</h2>
+                                        <h4 className="weather-c_h4 c_h4-dark">{item.weather[0].description}</h4>
                                     </div>
                                 </div>
                                 <div className="weather-card_hero">
