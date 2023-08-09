@@ -30,7 +30,6 @@
     justify-content: center;
     gap: 58px;
     margin-top: 48px;
-    background-color: #fff;
 }
 
 .weather-c_h2 {
@@ -58,6 +57,10 @@
 }
 
 .weather-card_wint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .weather-card_wint_h4 {
         color: #668CAF;
         font-family: DM Sans;
@@ -69,6 +72,10 @@
 }
 
 .weather-card_cloud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .weather-card_cloud_h4 {
         color: #668CAF;
         font-family: DM Sans;
@@ -80,6 +87,10 @@
 }
 
 .weather-card_Isun {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .weather-card_Isun_h4 {
         color: #668CAF;
         font-family: DM Sans;
