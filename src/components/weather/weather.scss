@@ -1,0 +1,91 @@
+.weather-section {
+    background-color: #000;
+}
+
+.weather-card {
+    width: 335px;
+    height: 303px;
+    border-radius: 20px;
+    background: #C9E5FF;
+    box-shadow: 0px 34px 101px 0px rgba(9, 0, 63, 0.38);
+    padding: 54px;
+}
+
+.weather-sun-img {
+    width: 82px;
+    height: 82px;
+
+}
+
+.weather-card_header {
+    display: flex;
+    gap: 38px;
+}
+
+.weather-card_hero {
+    width: 231px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 58px;
+    margin-top: 48px;
+    background-color: #fff;
+}
+
+.weather-c_h2 {
+    background: linear-gradient(180deg, #296399 29.17%, rgba(255, 255, 255, 0.00) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #91B3D2;
+    font-family: Plus Jakarta Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.weather-c_h4 {
+    color: #658CAF;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.weather-card_wint {
+    .weather-card_wint_h4 {
+        color: #668CAF;
+        font-family: DM Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.weather-card_cloud {
+    .weather-card_cloud_h4 {
+        color: #668CAF;
+        font-family: DM Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.weather-card_Isun {
+    .weather-card_Isun_h4 {
+        color: #668CAF;
+        font-family: DM Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
