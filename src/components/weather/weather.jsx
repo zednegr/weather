@@ -8,7 +8,7 @@ function Weather() {
                 <div className="weather-wrapper">
                     <div className="weather-card">
                         <div className="weather-card_header">
-                            <h1>hI</h1>
+                            
                         </div>
                         <div className="weather-card_hero">
 
