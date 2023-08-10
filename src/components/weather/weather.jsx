@@ -107,7 +107,7 @@ function Weather() {
                                 </div>
                                 <div className="weather-card_hero">
                                     <div className="weather-card_wint">
-                                        <img src={WeatherWint} alt="Icon" />
+                                        <img className="weather-wint_icon" src={WeatherWint} alt="Icon" />
                                         <h4 className="weather-card_wint_h4">{item.wind.speed} km/h</h4>
                                     </div>
                                     <div className="weather-card_cloud">
