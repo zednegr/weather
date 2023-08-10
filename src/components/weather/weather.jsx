@@ -63,7 +63,7 @@
 
 // export default Weather
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./weather.scss";
 import WeatherSun from "../../assets/svg/weather-sun.svg";
 import WeatherCloud from "../../assets/svg/weather-cloud.svg";
@@ -73,11 +73,21 @@ import axios from "axios";
 
 function Weather() {
     const [data, setData] = useState([]);
+    const time = new Date().getHours();
+    const card = useRef()
 
     useEffect(() => {
         axios('https://api.openweathermap.org/data/2.5/weather?q=andijon&units=metric&appid=277e160f5af509c9f6e384d7cbe3501c')
             .then((res) => setData([res.data]))
         }, []);
+
+       useEffect(() => {
+        if (time >= 19 || time <= 5) {
+            card.current?.classList.add('card-dark')
+        } else {
+            card.current?.classList.remove('card-dark')
+        }
+       }, [])
 
     return (
         <section className="weather-section">
@@ -85,7 +95,7 @@ function Weather() {
                 <div className="weather-wrapper">
                     {
                         data.map((item) => (
-                            <div className="weather-card card-dark" key={item.id}>
+                            <div className="weather-card" ref={card} key={item.id}>
                                 <div className="weather-card_header">
                                     <div className="weather-sun">
                                         <img className="weather-sun-img" src={WeatherSun} alt="Sun" />
